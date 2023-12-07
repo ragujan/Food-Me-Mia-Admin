@@ -27,7 +27,6 @@ public class Delete {
                 System.out.println("previous image name "+imageName);
                 StorageReference desertRef = storageRef.child(Constants.FOOD_IMAGE_FOLDER_PATH +"/"+imageName);
 
-                System.out.println("download url from rag "+desertRef.toString());
 
                 desertRef.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
