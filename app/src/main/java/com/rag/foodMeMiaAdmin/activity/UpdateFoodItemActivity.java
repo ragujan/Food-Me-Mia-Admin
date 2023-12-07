@@ -1,4 +1,4 @@
-package com.rag.foodMeMiaAdmin.views;
+package com.rag.foodMeMiaAdmin.activity;
 
 import static com.rag.foodMeMiaAdmin.util.firebaseUtil.UniqueNameGenerationFirebase.observeUniqueName;
 

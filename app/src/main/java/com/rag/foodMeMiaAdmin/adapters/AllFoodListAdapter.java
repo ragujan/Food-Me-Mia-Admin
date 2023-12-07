@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.rag.foodMeMiaAdmin.fragments.ChangeFoodStatusDialogFragment;
 import com.rag.foodMeMiaAdmin.R;
-import com.rag.foodMeMiaAdmin.views.UpdateFoodItemActivity;
+import com.rag.foodMeMiaAdmin.activity.UpdateFoodItemActivity;
 import com.rag.foodMeMiaAdmin.domain.FoodDomainRetrieval;
 
 import java.util.List;

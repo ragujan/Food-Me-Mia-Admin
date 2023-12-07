@@ -1,4 +1,4 @@
-package com.rag.foodMeMiaAdmin.views;
+package com.rag.foodMeMiaAdmin.activity;
 
 import static android.content.ContentValues.TAG;
 
@@ -55,13 +55,7 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(HomeActivity.this, MainActivity.class);
             startActivity(intent);
         }
-        binding.addTestData.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                addData();
-                addNestedData();
-            }
-        });
+
         binding.uploadImageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,7 +66,6 @@ public class HomeActivity extends AppCompatActivity {
         Context context = this;
         ListenerUtil.onClickBtnIntent(binding.viewImagesBtn,context, ViewImagesActivity.class );
         ListenerUtil.onClickBtnIntent(binding.uploadImageBtn,context, UploadFoodItemActivity.class);
-        ListenerUtil.onClickBtnIntent(binding.firestoreTestBtn,context, FireStoreTest.class);
         ListenerUtil.onClickBtnIntent(binding.viewFoodItemsBtn,context, ViewFoodItemsActivity.class);
         ListenerUtil.onClickBtnIntent(binding.testActivityBtn,context, TestActivity.class);
 
@@ -104,37 +97,5 @@ public class HomeActivity extends AppCompatActivity {
         ;
 
 
-    }
-    public void addNestedData(){
-
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-        Map<String, Object> docData = new HashMap<>();
-        docData.put("stringExample", "Hello world!");
-        docData.put("booleanExample", true);
-        docData.put("numberExample", 3.14159265);
-        docData.put("dateExample", new Timestamp(new Date()));
-        docData.put("listExample", Arrays.asList(1, 2, 3));
-        docData.put("nullExample", null);
-
-        Map<String, Object> nestedData = new HashMap<>();
-        nestedData.put("a", 5);
-        nestedData.put("b", true);
-
-        docData.put("objectExample", nestedData);
-
-        db.collection("data").document("one")
-                .set(docData)
-                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Log.d(TAG, "DocumentSnapshot successfully written!");
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.w(TAG, "Error writing document", e);
-                    }
-                });
     }
 }

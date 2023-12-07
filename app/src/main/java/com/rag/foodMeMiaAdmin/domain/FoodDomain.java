@@ -12,7 +12,7 @@ public class FoodDomain {
     private Boolean isAvailable;
 
     private String imageUrl;
-
+    private String added_at;
     public String getImageUrl() {
         return imageUrl;
     }
@@ -41,6 +41,14 @@ public class FoodDomain {
         this.fastFoodCategory = fastFoodCategory;
         this.isAvailable = isAvailable;
         this.imageUrl = imageUrl;
+    }
+
+    public String getAdded_at() {
+        return added_at;
+    }
+
+    public void setAdded_at(String added_at) {
+        this.added_at = added_at;
     }
 
     public String getTitle() {

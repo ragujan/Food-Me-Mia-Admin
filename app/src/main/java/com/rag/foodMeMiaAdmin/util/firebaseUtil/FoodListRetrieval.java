@@ -58,7 +58,9 @@ public class FoodListRetrieval {
                                     dataResuts.put(Constants.DATA_RETRIEVAL_STATUS, "Success");
                                     dataResuts.put("foodDomainList", foodDomainList);
                                     foodDomainList.stream().forEach(data -> System.out.println("newly updated " + data.getTitle()));
+
                                     allFoodListAdapter.updateData(foodDomainList);
+
                                     dataResuts.put("adapter", allFoodListAdapter);
 
                                     emitter.onSuccess(dataResuts);

@@ -1,4 +1,4 @@
-package com.rag.foodMeMiaAdmin.views;
+package com.rag.foodMeMiaAdmin.activity;
 
 import static android.content.ContentValues.TAG;
 import static com.rag.foodMeMiaAdmin.util.firebaseUtil.UniqueNameGenerationFirebase.observeUniqueName;
@@ -21,6 +21,7 @@ import androidx.activity.result.contract.ActivityResultContracts.PickVisualMedia
 import com.rag.foodMeMiaAdmin.databinding.ActivityUploadFoodItemBinding;
 import com.rag.foodMeMiaAdmin.domain.FastFoodCategory;
 import com.rag.foodMeMiaAdmin.domain.FoodDomain;
+import com.rag.foodMeMiaAdmin.util.StringUtils;
 import com.rag.foodMeMiaAdmin.util.firebaseUtil.UploadFoodItem;
 import com.rag.foodMeMiaAdmin.util.firebaseUtil.UploadImageFirebase;
 
@@ -168,9 +169,11 @@ public class UploadFoodItemActivity extends AppCompatActivity implements Adapter
 
                                             FoodDomain foodDomain = new FoodDomain();
                                             foodDomain.setTitle(title);
+
                                             foodDomain.setPrice(Double.parseDouble(price));
                                             foodDomain.setImageUrl(uploadedData.get("url").toString());
                                             foodDomain.setAvailable(false);
+                                            foodDomain.setAdded_at(StringUtils.getDate());
                                             foodDomain.setCalories(Integer.parseInt(caloryCountString));
                                             foodDomain.setPreparationTime(Integer.parseInt(preparationTimeString));
                                             foodDomain.setFastFoodCategory(category);

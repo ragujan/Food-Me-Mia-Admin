@@ -1,4 +1,4 @@
-package com.rag.foodMeMiaAdmin.views;
+package com.rag.foodMeMiaAdmin.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;

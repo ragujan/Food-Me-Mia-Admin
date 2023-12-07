@@ -19,7 +19,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.rag.foodMeMiaAdmin.databinding.FragmentLoginBinding;
-import com.rag.foodMeMiaAdmin.views.HomeActivity;
+import com.rag.foodMeMiaAdmin.activity.HomeActivity;
 
 public class LoginFragment extends Fragment {
     FragmentLoginBinding binding;

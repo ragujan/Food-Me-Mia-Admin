@@ -1,9 +1,13 @@
 package com.rag.foodMeMiaAdmin.util;
 
+import android.annotation.SuppressLint;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLDecoder;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -26,5 +30,9 @@ public class StringUtils {
         }
 
         return imageName.get();
+    }
+    @SuppressLint("SimpleDateFormat")
+    public static String getDate() {
+        return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
     }
 }

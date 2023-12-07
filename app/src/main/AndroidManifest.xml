@@ -18,29 +18,29 @@
         <activity android:name="com.rag.foodMeMiaAdmin.testing.TestActivity" android:exported="false">
 
         </activity>
-        <activity android:name="com.rag.foodMeMiaAdmin.views.UpdateFoodItemActivity" android:exported="false">
+        <activity android:name="com.rag.foodMeMiaAdmin.activity.UpdateFoodItemActivity" android:exported="false">
 
         </activity>
         <activity
-            android:name="com.rag.foodMeMiaAdmin.views.ViewFoodItemsActivity"
+            android:name="com.rag.foodMeMiaAdmin.activity.ViewFoodItemsActivity"
             android:exported="false" />
         <activity
             android:name="com.rag.foodMeMiaAdmin.testing.FireStoreTest"
             android:exported="false" />
         <activity
-            android:name="com.rag.foodMeMiaAdmin.views.ViewImagesActivity"
+            android:name="com.rag.foodMeMiaAdmin.activity.ViewImagesActivity"
             android:exported="false" />
         <activity
-            android:name="com.rag.foodMeMiaAdmin.views.UploadFoodItemActivity"
+            android:name="com.rag.foodMeMiaAdmin.activity.UploadFoodItemActivity"
             android:exported="false" />
         <activity
             android:name="com.rag.foodMeMiaAdmin.testing.RxTest"
             android:exported="false" />
         <activity
-            android:name="com.rag.foodMeMiaAdmin.views.HomeActivity"
+            android:name="com.rag.foodMeMiaAdmin.activity.HomeActivity"
             android:exported="false" />
         <activity
-            android:name="com.rag.foodMeMiaAdmin.views.MainActivity"
+            android:name="com.rag.foodMeMiaAdmin.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

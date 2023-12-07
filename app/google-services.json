@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "412166951153",
+    "project_id": "foodmemia-1901c",
+    "storage_bucket": "foodmemia-1901c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412166951153:android:557cbb929c9564998bd950",
+        "android_client_info": {
+          "package_name": "com.rag.foodMeMia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwoSLa6nPYsFTqS-8-02r6nzM8YbkjYes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412166951153:android:00210df926b556f78bd950",
+        "android_client_info": {
+          "package_name": "com.rag.foodMeMiaAdmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwoSLa6nPYsFTqS-8-02r6nzM8YbkjYes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
